@@ -10,7 +10,6 @@ export function TelaResiduos() {
                 <h1 className="gerencie">Gerencie e acompanhe suas operações na Ecoleta.</h1>
 
                 <div className="busca">
-                    <img class="lupa" src={lupa} alt="" />
                     <input className="barra-pesquisa" type="text"
                         placeholder="Buscar por material" />
 
