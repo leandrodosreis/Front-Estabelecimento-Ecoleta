@@ -54,6 +54,7 @@
     border-radius: 20px;
     background-color: #fff;
     margin-top: 50px;
+    
 }
 
 .lupa {
@@ -68,9 +69,16 @@
     background: transparent;
     width: 100%;
     font-size: 18px;
+    
 }
 
-.filto-tipo
+.filto-tipo { 
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 18px;
+}
 
 .filtrar-tipo {
     border: none;
@@ -78,4 +86,23 @@
     background: transparent;
     width: 100%;
     font-size: 18px;
+}
+
+
+.botao-filtrar { 
+    display: flex;
+    width: 105px;
+    height: 51px;
+    height: 51px;
+    margin-left: 100px;
+}
+
+.botao-filtrar p {
+    display: flex;
+        
+
+}
+
+.teste {
+    font-size: 100px;
 }

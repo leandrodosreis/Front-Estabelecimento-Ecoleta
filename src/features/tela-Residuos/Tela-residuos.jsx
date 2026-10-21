@@ -1,4 +1,9 @@
 import "./tela-residuos.css";
+import lupa from "../../assets/Lupa.png"
+
+
+
+
 
 export function TelaResiduos() {
     return (
@@ -10,21 +15,28 @@ export function TelaResiduos() {
                 <h1 className="gerencie">Gerencie e acompanhe suas operações na Ecoleta.</h1>
 
                 <div className="busca">
+                    <img className="lupa" src={lupa} alt="" />
                     <input className="barra-pesquisa" type="text"
                         placeholder="Buscar por material" />
 
                 </div>
 
                 <div className="filtro-tipo">
-                    <label>
+                    <label className="filtrar-tipo">
                         Todos os tipos
                     </label>
 
 
                     <div className="filtro-status">
-                        <label>
+                        <label className="filtrar ">
                             Todos os status
                         </label>
+
+                        <button className="botao-filtrar">
+                            <p>Filtrar</p>
+                        </button>
+
+                        <h1 className="teste">  abc</h1>
 
 
                     </div>
