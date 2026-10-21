@@ -1,0 +1,81 @@
+.cabecalho {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0px 5px 0px -2px #DFECE9;
+}
+
+.logo-ecoleta {
+    display: flex;
+    width: 150px;
+}
+
+
+
+.nav-bar {
+    display: flex;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px;
+}
+
+.painel-estabelecimento {
+    font-size: 20px;
+    margin-bottom: -40px;
+    color: #30AC74;
+}
+
+.meus-residos {
+
+    font-size: 64px;
+}
+
+.gerencie {
+    font-size: 20px;
+    color: #76928F;
+    margin-top: -40px;
+    opacity: 70%;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    width: 557px;
+    height: 61px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.lupa {
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.barra-pesquisa {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 18px;
+}
+
+.filto-tipo
+
+.filtrar-tipo {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 18px;
+}

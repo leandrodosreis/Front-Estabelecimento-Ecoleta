@@ -2,9 +2,8 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import { Header } from '../components/header/Header';
 import { Cadastro } from '../features/cadastro/Cadastro';
 import { Home } from '../features/home/Home';
-import { Coletas } from '../features/coletas/Coletas';
 import { Footer } from '../components/footer/Footer';
-
+import { TelaResiduos } from '../features/tela-Residuos/Tela-residuos';
 
 // tela provisória: troque pelas telas de verdade quando criá-las
 function EmBreve({ titulo }) {
@@ -29,10 +28,11 @@ export function Rotas() {
 
       <Route element={<LayoutComHeader />}>
         <Route path="/home" element={<Home />} />
-        <Route path="/residuos" element={<EmBreve titulo="Resíduos" />} />
-        <Route path="/coletas" element={<Coletas />} />
+        <Route path="/residuos" element={<TelaResiduos/>} />
+        <Route path="/coletas" element={<EmBreve titulo="Coletas" />} />
         <Route path="/historico" element={<EmBreve titulo="Histórico" />} />
         <Route path="/perfil" element={<EmBreve titulo="Perfil" />} />
+        
       </Route>
     </Routes>
   );
