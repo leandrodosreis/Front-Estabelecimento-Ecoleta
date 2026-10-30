@@ -9,6 +9,7 @@ import { Perfil } from '../features/perfil/Perfil';
 import { Home } from '../features/home/Home';
 import { Historico } from '../features/historico/Historico';
 import { TelaResiduos } from '../features/tela-residuos/Tela-residuos';
+import { Login } from '../features/tela-login/login';
 
 
 // Tela provisória, só mostra um título.
@@ -31,7 +32,9 @@ export function Rotas() {
   return (
     <Routes>
       {/* Telas SEM Header e Footer */}
-      <Route path="/" element={<Cadastro />} />
+      <Route path="/Cadastro" element={<Cadastro />} />
+      <Route path="/" element={<Login />} />
+
 
       {/* Telas COM Header e Footer (dentro do Layout) */}
       <Route element={<Layout />}>

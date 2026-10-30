@@ -1,0 +1,35 @@
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+
+}
+
+.card {
+    display: flex;
+    width: 473px;
+    height: 706px;
+    background-color: white;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+
+.senha {
+    display: flex;
+    width: 303px;
+    height: 45px;
+    margin-top: 207px;
+    margin-left: -205px;
+    font-size: 6px;
+}
+
+.sua-senha {
+    display: flex;
+    position:absolute ;
+    margin-top: -50px;
+    margin-left: 290px;
+}
