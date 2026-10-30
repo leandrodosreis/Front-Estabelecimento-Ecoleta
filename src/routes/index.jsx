@@ -31,12 +31,12 @@ export function Rotas() {
   return (
     <Routes>
       {/* Telas SEM Header e Footer */}
-      <Route path="/" element={<TelaResiduos />} />
+      <Route path="/" element={<Cadastro />} />
 
       {/* Telas COM Header e Footer (dentro do Layout) */}
       <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
-        <Route path="/residuos" element={<Cadastro/>} />
+        <Route path="/residuos" element={<TelaResiduos/>} />
         <Route path="/coletas" element={<Coletas />} />
         <Route path="/historico" element={<Historico />} />
         <Route path="/perfil" element={<Perfil/>} />
