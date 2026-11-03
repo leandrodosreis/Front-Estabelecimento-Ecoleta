@@ -17,19 +17,60 @@
 
 
 }
+.entrar{
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+}
+
+.card-login {
+    height: 45px;
+    margin-top: 140px;
+    margin-left:50px;
+    font-size: 7px;
+}
+
+.cnpj {
+    display: flex;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.campo-login {
+    display: flex;
+    width: 250px;
+    height: 45px;
+}
+
 
 .senha {
     display: flex;
-    width: 303px;
+    flex-direction: column  ;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 7px;
+}
+
+.campo-senha {
+    display: flex;
+    width: 250px;
     height: 45px;
-    margin-top: 207px;
-    margin-left: -205px;
-    font-size: 6px;
+
 }
 
 .sua-senha {
     display: flex;
-    position:absolute ;
-    margin-top: -50px;
-    margin-left: 290px;
+    margin-top: -30px;
+    position: absolute;
+}
+
+.botao-entrar{
+    display: flex;
+    background-color: green;
+    width: 250px;
+    height: 45px;
+    align-items: center;
+    ,
+
+    
 }

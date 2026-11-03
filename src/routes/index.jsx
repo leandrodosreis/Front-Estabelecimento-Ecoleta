@@ -32,7 +32,7 @@ export function Rotas() {
   return (
     <Routes>
       {/* Telas SEM Header e Footer */}
-      <Route path="/Cadastro" element={<Cadastro />} />
+      <Route path="/Login" element={<Cadastro />} />
       <Route path="/" element={<Login />} />
 
 
