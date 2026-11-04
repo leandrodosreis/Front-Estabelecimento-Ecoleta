@@ -11,7 +11,7 @@
 
 }
 
-.card {
+.card-recuperar {
     display: flex;
     width: 473px;
     height: 706px;
@@ -29,12 +29,7 @@
     margin-top: 70px;
 }
 
-.card-login {
-    height: 45px;
-    margin-top: 90px;
-    margin-left: 50px;
-    font-size: 7px;
-}
+
 
 .email {
     display: flex;

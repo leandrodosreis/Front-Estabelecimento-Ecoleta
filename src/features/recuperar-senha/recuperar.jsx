@@ -15,7 +15,7 @@ export function Recuperar() {
 
             <main className="main-recuperar">   
 
-                <div className="card">
+                <div className="card-recuperar">
 
 
                     <div className="login-container">

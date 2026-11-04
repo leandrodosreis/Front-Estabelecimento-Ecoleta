@@ -11,7 +11,7 @@
 
 }
 
-.card {
+.card-pop-up {
     display: flex;
     width: 473px;
     height: 546px;
@@ -28,7 +28,7 @@
 
 }	
 
-.container-info{ 
+.pop-up-container{ 
     display: flex;
     flex-direction: column;
 }
@@ -41,11 +41,11 @@
 
 
 
-.recuperar {
+.notificacao {
     display: flex;
     font-size:54px;
     margin-top: 40px;
-    margin-left: 200px;
+    margin-left: 90px;
 }
 
 .card-login {
@@ -55,7 +55,7 @@
     font-size: 7px;
 }
 
-.aviso { 
+.alerta { 
     display: flex;
     margin-top: 250px;
     font-size: 18px;
@@ -63,14 +63,14 @@
     margin-left: 45px;
 }
 
-.confirmar {
+.redefinir {
     display: flex;
 
     font-size: 32px;
     color: white;
 }
 
-.botao-confirmar {
+.botao-redefinir {
     display: flex;
     background-color: #52B788;
     border: none;
@@ -80,7 +80,7 @@
     margin-left: -50px;    
 }
 
-.voltar-login{
+.voltar-pop-up{
     display: flex;
     color: #52B788;
     margin-top: 260px;

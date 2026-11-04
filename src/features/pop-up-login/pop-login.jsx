@@ -13,31 +13,33 @@ export function PopLogin() {
     return (
         <>
 
-            <main className="main-recuperar">
+            <main className="main-pop-up">
 
-                <div className="card">
+                <div className="card-pop-up">
 
 
-                        <div className="login-container">
+                        <div className="pop-up-container">
                         <img className="imagem-verificado" src={verificado} alt="" />
-                            <h1 className='recuperar'>Email enviado! </h1>
+                            <h1 className="notificacao">Email enviado! </h1>
 
-                        </div>
+                            </div>
+
 
 
                         <div className="container-info">''
 
 
-                        <h2 className="aviso">Verifique seu email para redefinir a senha</h2>
+                        <h2 className="alerta">Verifique seu email para redefinir a senha</h2>
 
-                        <button className="botao-confirmar"><h2 className="confirmar">Abrir redefinição</h2></button>
+                        <button className="botao-redefinir"><h2 className="redefinir">Abrir redefinição</h2></button>
 
-                        <h2 className="voltar-login"><a href="http://localhost:5173/login">Voltar para o login</a></h2>
+                        <h2 className="voltar-pop-up"><a href="http://localhost:5173/login">Voltar para o login</a></h2>
 
 
                     </div>
 
                 </div>
+
 
 
             </main>
