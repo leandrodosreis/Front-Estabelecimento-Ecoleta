@@ -30,14 +30,13 @@ export function Login() {
                         <div className="senha">
                             <h1 className="sua-senha">Senha</h1>
                             <input className="campo-senha" type="password"/>
-                            <h2 className='esqueceu-senha'><a href="http://">Esqueceu a senha?</a></h2>
+                            <h2 className='esqueceu-senha'><a href="http://localhost:5173/recuperar">Esqueceu a senha?</a></h2>
 
 
                             <h2 className="cadastro ">Não possui conta? <a href="http://localhost:5173/">Cadastre-se</a></h2>
 
-                            <div className="botao">
                                 <button className="botao-entrar"><h2 className="login-entrar">Entrar</h2></button>
-                            </div>
+                            
 
                         </div>
                     </div>

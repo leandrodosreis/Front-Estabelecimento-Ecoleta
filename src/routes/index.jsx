@@ -10,6 +10,10 @@ import { Home } from '../features/home/Home';
 import { Historico } from '../features/historico/Historico';
 import { TelaResiduos } from '../features/tela-residuos/Tela-residuos';
 import { Login } from '../features/tela-login/login';
+import { Recuperar } from '../features/recuperar-senha/recuperar';
+import { PopLogin } from '../features/pop-up-login/pop-login';
+
+
 
 
 // Tela provisória, só mostra um título.
@@ -32,8 +36,10 @@ export function Rotas() {
   return (
     <Routes>
       {/* Telas SEM Header e Footer */}
-      <Route path="/Login" element={<Cadastro />} />
-      <Route path="/" element={<Login />} />
+      <Route path="/recuperar" element={<Recuperar/>} />
+      <Route path="/pop-up" element={<PopLogin/>} />
+      <Route path="/" element={<Cadastro/>} />
+      <Route path="/Login" element={<Login/>} />
 
 
       {/* Telas COM Header e Footer (dentro do Layout) */}

@@ -1,0 +1,87 @@
+.main-recuperar {
+    background-image: url("../../assets/background-tela.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+.card {
+    display: flex;
+    width: 473px;
+    height: 546px;
+    background-color: white;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+
+}	
+
+.container-info{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-verificado { 
+    display: flex;
+    margin-left: 280px;    
+    margin-top: 120px;
+}
+
+
+
+.recuperar {
+    display: flex;
+    font-size:54px;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.card-login {
+    height: 45px;
+    margin-top: 90px;
+    margin-left: 50px;
+    font-size: 7px;
+}
+
+.aviso { 
+    display: flex;
+    margin-top: 250px;
+    font-size: 18px;
+    width: 600px;
+    margin-left: 45px;
+}
+
+.confirmar {
+    display: flex;
+
+    font-size: 32px;
+    color: white;
+}
+
+.botao-confirmar {
+    display: flex;
+    background-color: #52B788;
+    border: none;
+    width: 350px;
+    height: 55px;
+    margin-top: 120px;
+    margin-left: -50px;    
+}
+
+.voltar-login{
+    display: flex;
+    color: #52B788;
+    margin-top: 260px;
+}
