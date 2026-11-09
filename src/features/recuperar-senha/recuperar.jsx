@@ -32,9 +32,9 @@ export function Recuperar() {
                             <h2 className="aviso">Informe seu e-mail para receber um link
                                 de redefinição de senha.</h2>
 
-                                <button className="botao-confirmar"><h2 className="confirmar">Confirmar</h2></button>
+                                <button className="botao-confirmar"><h2 className="confirmar"><a className="link-pop" href="http://localhost:5173/pop-up">Confirmar</a></h2></button>
 
-                                <h2 className="voltar-login"><a href="http://localhost:5173/login">Voltar para o login</a></h2>
+                                <h2 className="voltar-login"><a className="link-login" href="http://localhost:5173/login">Voltar para o login</a></h2>
                             
 
                         </div>

@@ -1,0 +1,162 @@
+.main-nova-senha,
+.main-nova-senha * {
+    box-sizing: border-box;
+}
+
+.main-nova-senha {
+    background-image: url("../../assets/background-tela.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 24px 16px;
+}
+
+.main-nova-senha .card-senha {
+    width: 100%;
+    max-width: 473px;
+    min-height: 600px;
+    padding: 48px 56px 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-nova-senha .nova-senha-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.main-nova-senha h1,
+.main-nova-senha h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.main-nova-senha .new-password {
+    display: block;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* grupos de campo */
+.main-nova-senha .card-nova-senha,
+.main-nova-senha .input-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: auto;
+    margin: 0;
+    font-size: inherit;
+}
+
+.main-nova-senha .input-senha {
+    gap: 6px;
+}
+
+/* labels */
+.main-nova-senha .codigo-senha,
+.main-nova-senha .definir-senha,
+.main-nova-senha .confirmar-senha {
+    position: static;
+    display: block;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #222;
+}
+
+.main-nova-senha .confirmar-senha {
+    margin-top: 14px;
+}
+
+/* inputs */
+.main-nova-senha .campo-trocar-senha,
+.main-nova-senha .nova-senha,
+.main-nova-senha .campo-confirmar {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    padding: 0 12px;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+}
+
+.main-nova-senha .campo-trocar-senha:focus,
+.main-nova-senha .nova-senha:focus,
+.main-nova-senha .campo-confirmar:focus {
+    outline: 2px solid #52B788;
+    outline-offset: 1px;
+}
+
+/* botão: o link ocupa o botão inteiro */
+.main-nova-senha .botao-redefinir-senha {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 45px;
+    margin-top: 24px;
+    padding: 0;
+    background-color: #52B788;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.main-nova-senha .botao-redefinir-senha:hover {
+    background-color: #40a074;
+}
+
+.main-nova-senha .redefinir-senha {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.main-nova-senha .a-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nova-senha .voltar-para-login {
+    display: block;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.main-nova-senha .voltar-para-o-login {
+    color: #52B788;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.main-nova-senha .voltar-para-o-login:hover {
+    text-decoration: underline;
+}

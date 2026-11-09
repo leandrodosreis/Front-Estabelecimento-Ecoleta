@@ -1,87 +1,114 @@
-.main-recuperar {
-    background-image: url("../../assets/background-tela.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-
+.main-pop-up {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background-image: url("../../assets/background-tela.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card-pop-up {
-    display: flex;
-    width: 473px;
-    height: 546px;
-    background-color: white;
-    justify-content: center;
-    flex-direction: row;
-
-
+  width: 100%;
+  max-width: 473px;
+  box-sizing: border-box;
+  padding: 56px 40px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.78);
+  border: 3px solid #000;
+  border-radius: 24px;
 }
 
-.login-container {
-    display: flex;
-    flex-direction: column;
-
-}	
-
-.pop-up-container{ 
-    display: flex;
-    flex-direction: column;
+.icone-verificado {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: #d1f5de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.imagem-verificado { 
-    display: flex;
-    margin-left: 280px;    
-    margin-top: 120px;
+.icone-verificado img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
-
-
 
 .notificacao {
-    display: flex;
-    font-size:54px;
-    margin-top: 40px;
-    margin-left: 90px;
+  margin: 56px 0 0;
+  font-size: 44px;
+  font-weight: 700;
+  color: #1f3535;
 }
 
-.card-login {
-    height: 45px;
-    margin-top: 90px;
-    margin-left: 50px;
-    font-size: 7px;
-}
-
-.alerta { 
-    display: flex;
-    margin-top: 250px;
-    font-size: 18px;
-    width: 600px;
-    margin-left: 45px;
-}
-
-.redefinir {
-    display: flex;
-
-    font-size: 32px;
-    color: white;
+.alerta {
+  margin: 20px 0 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: #1f3535;
 }
 
 .botao-redefinir {
-    display: flex;
-    background-color: #52B788;
-    border: none;
-    width: 350px;
-    height: 55px;
-    margin-top: 120px;
-    margin-left: -50px;    
+  width: 100%;
+  height: 58px;
+  margin-top: 56px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6fb58b;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.voltar-pop-up{
-    display: flex;
-    color: #52B788;
-    margin-top: 260px;
+.botao-redefinir:hover {
+  background-color: #52b788;
+}
+
+.botao-redefinir:focus-visible,
+.voltar-pop-up:focus-visible {
+  outline: 3px solid #1f3535;
+  outline-offset: 3px;
+}
+
+.voltar-pop-up {
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4f9d78;
+  text-decoration: none;
+}
+
+.voltar-pop-up:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .card-pop-up {
+    padding: 40px 20px 32px;
+  }
+
+  .notificacao {
+    font-size: 34px;
+  }
+
+  .botao-redefinir {
+    font-size: 22px;
+
+  }
+}
+
+.link-redefinir-senha {
+  display: flex;
+  color: #ffffff;
+  text-decoration: none;
+  justify-content: center;
 }
