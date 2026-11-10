@@ -1,14 +1,59 @@
-import { useState, useEffect } from 'react';
 import "./login.css";
 import logo from "../../assets/logo-login.png"
+import { useState, useEffect } from 'react';
+// Link troca de tela sem recarregar a página. useNavigate troca de tela pelo código.
+import { Link, useNavigate } from 'react-router-dom';
+import "./Login.css";
+
+import { loginEmpresa } from './loginApi';
+import { salvarToken } from '../../services/API';
+import { numeros, formatarCnpj } from '../../utils/formatadores';
 
 
 export function Login() {
-    const [cnpj, setCnpj] = useState('');
+// useNavigate dá uma função para trocar de tela pelo código
+    const navigate = useNavigate();
 
+    // ESTADOS: informações que, ao mudar, atualizam a tela
+    const [cnpj, setCnpj] = useState(''); // o que o usuário digitou no CNPJ
+    const [senha, setSenha] = useState(''); // o que o usuário digitou na senha
+    const [mensagem, setMensagem] = useState(''); // mensagem de erro (vazia = não aparece)
+    const [enviando, setEnviando] = useState(false); // true = esperando a resposta da API
+
+    // Roda a cada letra digitada no CNPJ
     const handleInputChange = (event) => {
         setCnpj(event.target.value);
     };
+
+    // Roda quando o usuário clica em Entrar
+    async function entrar() {
+        // 1. Confere os campos. "return" para a função aqui se tiver erro.
+        // (numeros() tira os pontos e traços, para contar só os dígitos do CNPJ)
+        if (numeros(cnpj).length !== 14) {
+            setMensagem('CNPJ inválido.');
+            return;
+        }
+        if (senha.trim() === '') {
+            setMensagem('Informe a senha.');
+            return;
+        }
+
+        // 2. Limpa a mensagem anterior e envia para a API
+        setMensagem('');
+        setEnviando(true); // desabilita o botão enquanto espera
+        // O banco guarda o CNPJ formatado, então formatamos antes de enviar
+        let resultado = await loginEmpresa(formatarCnpj(numeros(cnpj)), senha);
+        setEnviando(false);
+
+        // 3. Mostra o resultado
+        if (resultado.ok) {
+            // Guarda os tokens no navegador e vai para a tela de Início
+            salvarToken(resultado.token);
+            navigate('/home');
+        } else {
+            setMensagem(resultado.mensagem);
+        }
+    }
 
     return (
         <>
@@ -23,21 +68,25 @@ export function Login() {
                         <img className="logo" src={logo} alt="" />
                         <div className="card-login">
                             <h1 className="cnpj">CNPJ</h1>
-                            <input className="campo-login" type="text" />
+                            <input className="campo-login" type="text" value={cnpj} onChange={handleInputChange} />
                         </div>
 
 
                         <div className="senha">
                             <h1 className="sua-senha">Senha</h1>
-                            <input className="campo-senha" type="password"/>
-                            <h2 className='esqueceu-senha'><a href="http://localhost:5173/recuperar">Esqueceu a senha?</a></h2>
+                            <input className="campo-senha" type="password" value={senha} onChange={(event) => setSenha(event.target.value)}/>
+                            <h2 className='esqueceu-senha'><a href="http://">Esqueceu a senha?</a></h2>
+
+                            <h2 className="cadastro ">Não possui conta? <Link to="/">Cadastre-se</Link></h2>
+
+                                {/* onClick: roda a função "entrar". disabled: desliga o botão enquanto envia */}
+                                <button className="botao-entrar" type="button" onClick={entrar} disabled={enviando}>
+                                    <h2 className="login-entrar">{enviando ? 'Entrando...' : 'Entrar'}</h2>
+                                </button>
 
 
-                            <h2 className="cadastro ">Não possui conta? <a href="http://localhost:5173/">Cadastre-se</a></h2>
-
-                                <button className="botao-entrar"><h2 className="login-entrar">Entrar</h2></button>
-                            
-
+                            {/* A mensagem de erro só aparece quando existe texto nela */}
+                            {mensagem && <p className="login-erro">{mensagem}</p>}
                         </div>
                     </div>
 
